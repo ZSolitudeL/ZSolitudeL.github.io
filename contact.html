@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Book Education Tuition Centre</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+    <section class="header">       
+    <nav>
+        <a href="index.html"><img src="images/logo2.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="bi bi-x-circle-fill" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SUBJECT</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="bi bi-bar-chart-steps" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>Contact Us</h1>
+    </div>
+
+    </section>
+<!------Contact Us Content------>
+    <section class="campus">
+        <h1>Choose the campus:</h1>
+        <p>uvuvwevwevwe onyetenyevwe ugwemuhwem osas</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <a href="contact_kl.html"><img src="images/KualaLumpur.png"></a>
+                <div class="layern">
+                    <h3>Kuala Lumpur</h3>
+                </div>
+
+               
+
+                </div>
+                <div class="campus-col">
+                    <a href="contact_ipoh.html"><img src="images/perak5.png"></a>
+                    
+                    <h3>Perak</h3>
+                    
+                    </div>
+                    <div class="campus-col">
+                        <a href="contact_penang.html"><img src="images/penang3.png"></a>
+                        
+                            <h3>Penang</h3>
+                        
+
+                    </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+<!------------Footer----------->
+<section class="footer">
+    <h4>About Us</h4> 
+    <p>uvuvwevwevwe onyetenyevwe ugwemuhwem osas</p>
+    <div class="icons">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-linkedin"></i>
+    </div>
+    <p>Made by Gui Jun Jie </p>
+</section>
+
+<!------Javascript for Toggle Menu--------->
+<script>
+
+    var navLinks= document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+    </body>
+</html>

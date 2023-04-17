@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Book Education Tuition Centre</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <section class="header">       
+    <nav>
+        <a href="index.html"><img src="images/logo2.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="bi bi-x-circle-fill" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="AboutUs.html">ABOUT</a></li>
+                <li><a href="subject.html">SUBJECT</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="bi bi-bar-chart-steps" onclick="showMenu()"></i>
+    </nav>
+<div class="text-box">
+    <h1>Blog</h1>
+</div>  
+
+    </section>
+
+<!------------blog page content----------->
+
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left"> 
+            <img src="images/javascript-39395.png">
+            <h2>What is JavaScript?</h2>
+            <p>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. 
+                While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, 
+                Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting 
+                object-oriented, imperative, and declarative (e.g. functional programming) styles.</p>
+            <br>
+            <p>JavaScript's dynamic capabilities include runtime object construction, variable parameter lists, function variables, dynamic script 
+                creation (via eval), object introspection (via for...in and Object utilities), and source-code recovery (JavaScript functions store 
+                their source text and can be retrieved through toString()).
+            </p>
+            <p>The standards for JavaScript are the ECMAScript Language Specification (ECMA-262) and the ECMAScript Internationalization API 
+                specification (ECMA-402). As soon as one browser implements a feature, we try to document it. This means that cases where some 
+                proposals for new ECMAScript features have already been implemented in browsers, documentation and examples in MDN articles may 
+                use some of those new features. Most of the time, this happens between the stages 3 and 4, and is usually before the spec is officially published.
+            </p>
+        <div class="comment-box">
+
+            <h3>Leave a comment</h3>
+
+            <form class="comment-form">
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter Email">
+                <textarea rows="5" placeholder="Your comment">
+                </textarea>
+                <button type="submit" class="hero-btn red-btn">Post Comment</button>
+            </form>
+        </div>
+        
+        </div>   
+        <div class="blog-right">
+            <h3>Articles Categories</h3>
+            <div>
+              <a href="python.html"><span>Python</span><span></span></a>
+            </div>
+            <div>
+              <a href="blog.html"><span>Time Management</span><span></span></a>
+            </div>
+            <div>
+              <a href="css.html"><span>CSS</span><span></span></a>
+            </div>
+          </div>          
+    </div>
+</section>
+
+<!------------Footer----------->
+<section class="footer">
+    <h4>About Us</h4> 
+    <p>uvuvwevwevwe onyetenyevwe ugwemuhwem osas</p>
+    <div class="icons">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-linkedin"></i>
+    </div>
+    <p>Made by Ong Zhi Le </p>
+</section>
+
+<!------Javascript for Toggle Menu--------->
+<script>
+
+    var navLinks= document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+    </body>
+</html>

@@ -1,199 +1,381 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="with=device-width, initial-scale=1.0">
-        <title>Book Education Tuition Center</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Book Education Tuition Center</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous">
+    </script>
     </head>
-    <body>
-    <section class="header">       
-    <nav>
-        <a href="index.html"><img src="images/logo2.png"></a>
-        <div class="nav-links" id="navLinks">
-            <i class="bi bi-x-circle-fill" onclick="hideMenu()"></i>
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">SUBJECT</a></li>
-                <li><a href="">BLOG</a></li>
-                <li><a href="">CONTACT</a></li>
-            </ul>
+
+<body>
+
+    <div class="popup-screen">
+        <div class="popup-box">
+            <i class="bi bi-x-circle close-btn"></i>
+            <h2>Important!</h2>
+            <p>Subscribe us to get more new information!</p>
+            <a href="#" class="btn">Subscribe</a>
         </div>
-        <i class="bi bi-bar-chart-steps" onclick="showMenu()"></i>
-    </nav>
-<div class="text-box">
-    <h1>World's Biggest Tuition Centre</h1>
-    <p>Programming languages is the easiest thing to learn</p>
-    <a href="" class="hero-btn">Visit Us To Know More</a>
-</div>  
+    </div>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo2.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x-circle-fill" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="AboutUs.html">ABOUT</a></li>
+                    <li><a href="subject.html">SUBJECT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Log in</button></li>
+                </ul>
+            </div>
+            <i class="bi bi-bar-chart-steps" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>World's Biggest Tuition Centre</h1>
+            <p>Programming languages is the easiest thing to learn</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
 
     </section>
-<!------Subject------>
-
-<section class="subject">
-    <h1>Subject We Offer</h1>
-    <p>We treat our students like family, prioritizing their well-being and fostering a supportive and inclusive community.</p>
-
-    <div class="row">
-        <div class="subject-col">
-            <h3>Python</h3>
-            <p>Python is a versatile and easy-to-read programming language used for various applications, including web development and data analysis.</p>
-        </div>
-        <div class="subject-col">
-            <h3>Javascript</h3>
-            <p>JavaScript brings life to websites, allowing developers to create engaging, interactive, and dynamic web applications with ease.</p>
-        </div>
-        <div class="subject-col">
-            <h3>CSS</h3>
-            <p>Cascading Style Sheets(CSS) is a critical part of web design that enables developers to control the presentation and layout of web page content, resulting in visually appealing and consistent user experiences.</p>
-        </div>
-    </div>
-</section>
-
-<!-------campus------->
-
-            <section class="campus">
-            <h1>Our Global Campus</h1>
-            <p>We treat our students like family, prioritizing their well-being and fostering a supportive and inclusive community.</p>
-
-            <div class="row">
-                <div class="campus-col">
-                    <img src="images/KualaLumpur.png">
-                    <div class="layer">
-                        <a href="https://en.wikipedia.org/wiki/Kuala_Lumpur"><h3>Kuala Lumpur</h3></a>
-                    </div>
-
-                    </div>
-                    <div class="campus-col">
-                        <img src="images/penang3.png    ">
-                        <div class="layer">
-                            <a href="https://en.wikipedia.org/wiki/Penang"><h3>Penang</h3></a>
-                        </div>
-                        </div>
-                        <div class="campus-col">
-                            <img src="images/perak5.png">
-                            <div class="layer">
-                                <a href="https://en.wikipedia.org/wiki/Perak"><h3>Perak</h3></a>
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="registerModalLabel">Login Page</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="login.php" method="post">
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="form2Example1">Email address : </label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
                             </div>
-        
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="form2Example2">Password : </label>
+                            <input type="text" class="form-control" id="validationCustom03" name="passwords" required>
+                            <div class="invalid-feedback">
+                                Please provide a password.
                             </div>
+                        </div>
+
+                        <div class="text-center">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary btn-block mb-4" name="login">Login</button>
+                            <!-- Register buttons -->
+                            <p>Not a member? <a href="#" data-bs-toggle="modal"
+                                    data-bs-target="#registerModal">Register</a></p>
+                            </button>
+                        </div>
+                        <p style="text-align:center;">by Loo Boon Hee</p>
+                    </form>
                 </div>
             </div>
-
-        </section>
-
-<!----------Facilities------------->
-
-<section class="facilities">
-    <h1>Our Facilities</h1>
-    <p>We treat our students like family, prioritizing their well-being and fostering a supportive and inclusive community.</p>
-    
-    <div class="row">
-        <div class="facilities-col">
-            <img src="images/canteen.png">
-            <h3>World Class Canteen</h3>
-            <p>"Experience the convenience and comfort of our world-class canteen at our tuition centre. Our canteen offers a diverse menu of delicious and nutritious meals, snacks, and beverages, prepared with the highest-quality ingredients and catering to various dietary requirements. Our canteen provides a comfortable and welcoming space for students to refuel and recharge during their learning sessions, ensuring they are fueled and ready to learn. Come and enjoy a delightful dining experience at our world-class canteen today!"</p>
-        </div>
-        <div class="facilities-col">
-            <img src="images/computerlab.png">
-            <h3>High Class Computer Lab</h3>
-            <p>"At our centre, we are proud to offer a high-class computer lab equipped with the latest hardware and software technology. Our lab provides a modern and comfortable learning environment for students to enhance their computer skills, conduct research, and complete their coursework efficiently. With our expert instructors available to offer support and guidance, students can explore various programming languages, software, and tools to stay ahead of the curve in today's ever-evolving tech landscape. Experience the power of cutting-edge technology in a comfortable and collaborative learning space at our high-class computer lab today."</p>
-        </div>
-        <div class="facilities-col">
-            <img src="images/counseling.png">
-            <h3>Professional Couseling Service</h3>
-            <p>we foster a sense of unity among our students and staff, treating everyone like family. Our supportive community encourages collaboration and teamwork, empowering students to help each other succeed and build lifelong connections. We believe that a united and inclusive environment promotes a positive and rewarding learning experience for everyone."</p>
         </div>
     </div>
-</section>
 
-<!-------testimonials------>
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="registerModalLabel">Register Page</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="user.php" method="post">
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="form2Example1">Email address : </label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
 
-<section class="testimonials">
-    <h1>What Our Students Say</h1>
-    <p>We treat our students like family, prioritizing their well-being and fostering a supportive and inclusive community.</p>
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="form2Example2">Password : </label>
+                            <input type="text" class="form-control" id="passwords" name="passwords" required>
+                            <div class="invalid-feedback">
+                                Please provide a password.
+                            </div>
+                        </div>
 
-    <div class="row">
-        <div class="testimonial-col">
-            <img src="images/user1.png">
-            <div>
-                <p>"I highly recommend Book Education Tuition Center for anyone looking for quality academic support. The instructors are knowledgeable, patient, and genuinely care about helping their students succeed. The classes are well-structured and engaging, making learning fun and effective. The center also provides a supportive and collaborative environment that encourages teamwork and fosters a sense of community. Overall, I am very satisfied with my experience at Book Education Tuition Center and would definitely recommend it to anyone looking for top-notch academic support."</p>
-                <h3>Lebron James</h3>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-half"></i>
-                
-            </div>
-        </div>
-        <div class="testimonial-col">
-            <img src="images/user2.png">
-            <div>
-                <p>"Book Education Tuition Center is the best academic center I've ever attended! The instructors are incredibly knowledgeable and passionate about teaching, and they create a supportive and collaborative environment that encourages students to excel. The classes are well-organized, engaging, and tailored to meet the individual needs of each student. I have noticed a significant improvement in my academic performance since attending Book Education Tuition Center. The center also provides top-notch facilities, such as a high-class computer lab and a world-class canteen. Overall, I would give Book Tuition Center a 5 stars for providing an exceptional learning experience and an inclusive community that fosters academic success and personal growth."</p>
-                <h3>Giannis Antetokounmpo</h3>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-            </div>
-        </div>
-        <div class="testimonial-col">
-            <img src="images/user3.png">
-            <div>
-                <p>"I am extremely grateful to have found Book Education Tuition Center. The instructors are knowledgeable, friendly, and truly invested in their students' success. They provide a supportive and collaborative environment that fosters academic growth and personal development. The center also offers excellent resources, including a professional counseling service and a high-class computer lab. The facilities are well-maintained, and the world-class canteen is an added bonus! I have seen a significant improvement in my academic performance since attending Book Education Tuition Center, and I have built valuable relationships with other students and staff. I would highly recommend this tuition center to anyone looking for quality academic support and a welcoming community."</p>
-                <h3>Stephen Curry</h3>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
+                        <div class="text-center">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary btn-block mb-4" name="save"
+                                value="Submit">Register</button>
+                            </button>
+                        </div>
+                        <p style="text-align:center;">by Loo Boon Hee</p>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</section>
 
-<!------------Call To Action----------->
+    <script type="text/javascript">
+        const popupScreen = document.querySelector(".popup-screen");
+        const popupBox = document.querySelector(".popup-box");
+        const closeBtn = document.querySelector(".close-btn");
 
-<section class="cta">
-    <h1>Join Us As Soon As Possible To Get More Discounts!</h1>
-    <a href="" class="hero-btn">CONTACT US</a>
-</section>
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                popupScreen.classList.add("active");
+            }, 2000); //Popout the screen in 2seconds after the page is loaded.
+        });
 
-<!------------Footer----------->
-<section class="footer">
-    <h4>About Us</h4> 
-    <p>We treat our students like family, prioritizing their well-being and fostering a supportive and inclusive community.</p>
-    <div class="icons">
-        <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.twitter.com"><i class="bi bi-twitter"></i></a>
-        <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com"><i class="bi bi-linkedin"></i></a>
-    </div>
-    <p>Made by Ong Zhi Le </p>
-</section>
+        closeBtn.addEventListener("click", () => {
+            popupScreen.classList.remove("active"); //close the popup screen on click the close button.
+            //Create a cookie for a day (to expire within a day) on click the close button.
+            document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60;
+        });
 
-<!------Javascript for Toggle Menu--------->
-<script>
+        //Use the created cookie to hide or show the popup screen.
+        const WebsiteCookie = document.cookie.indexOf("WebsiteName=");
 
-    var navLinks= document.getElementById("navLinks");
+        if (WebsiteCookie != -1) {
+            popupScreen.style.display = "none";//Hide the popup screen if the cookie is not expired. 
+        }
+        popupScreen.style.display = "flex";//Show the popup screen if the cookie is expired. 
+    </script>
+    <!------Subject------>
 
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
+    <section class="subject">
+        <h1>Subject We Offer</h1>
+        <p>We treat our students like family, prioritizing their well-being and fostering a supportive and inclusive
+            community.</p>
 
-</script>
+        <div class="row">
+            <div class="subject-col">
+                <h3>Python</h3>
+                <img src="images/python-logo-only.png">
+            </div>
+            <div class="subject-col">
+                <h3>JavaScript</h3>
+                <img src="images/javascript-39395.png">
+            </div>
+            <div class="subject-col">
+                <h3>CSS</h3>
+                <img src="images/pngwing.com.png">
+            </div>
+        </div>
 
-    </body>
+        <div class="text-center">
+            <button type="button" class="hero-btn red-btn" onclick="window.location.href='subject.html'">Take a
+                Look</button>
+        </div>
+    </section>
+
+    <!-------campus------->
+
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>We treat our students like family, prioritizing their well-being and fostering a supportive and inclusive
+            community.</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/KualaLumpur.png">
+                <div class="layer">
+                    <a href="https://en.wikipedia.org/wiki/Kuala_Lumpur">
+                        <h3>Kuala Lumpur</h3>
+                    </a>
+                </div>
+
+            </div>
+            <div class="campus-col">
+                <img src="images/penang3.png    ">
+                <div class="layer">
+                    <a href="https://en.wikipedia.org/wiki/Penang">
+                        <h3>Penang</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/perak5.png">
+                <div class="layer">
+                    <a href="https://en.wikipedia.org/wiki/Perak">
+                        <h3>Perak</h3>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <!----------Facilities------------->
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>We treat our students like family, prioritizing their well-being and fostering a supportive and inclusive
+            community.</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/canteen.png">
+                <h3>World Class Canteen</h3>
+                <p>"Experience the convenience and comfort of our world-class canteen at our tuition centre. Our canteen
+                    offers a diverse menu of delicious and nutritious meals, snacks, and beverages, prepared with the
+                    highest-quality ingredients and catering to various dietary requirements. Our canteen provides a
+                    comfortable and welcoming space for students to refuel and recharge during their learning sessions,
+                    ensuring they are fueled and ready to learn. Come and enjoy a delightful dining experience at our
+                    world-class canteen today!"</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/computerlab.png">
+                <h3>High Class Computer Lab</h3>
+                <p>"At our centre, we are proud to offer a high-class computer lab equipped with the latest hardware and
+                    software technology. Our lab provides a modern and comfortable learning environment for students to
+                    enhance their computer skills, conduct research, and complete their coursework efficiently. With our
+                    expert instructors available to offer support and guidance, students can explore various programming
+                    languages, software, and tools to stay ahead of the curve in today's ever-evolving tech landscape.
+                    Experience the power of cutting-edge technology in a comfortable and collaborative learning space at
+                    our high-class computer lab today."</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/counseling.png">
+                <h3>Professional Couseling Service</h3>
+                <p>we foster a sense of unity among our students and staff, treating everyone like family. Our
+                    supportive community encourages collaboration and teamwork, empowering students to help each other
+                    succeed and build lifelong connections. We believe that a united and inclusive environment promotes
+                    a positive and rewarding learning experience for everyone."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-------testimonials------>
+
+    <section class="testimonials">
+        <h1>What Our Students Say</h1>
+        <p>We treat our students like family, prioritizing their well-being and fostering a supportive and inclusive
+            community.</p>
+
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="images/user1.png">
+                <div>
+                    <p>"I highly recommend Book Education Tuition Center for anyone looking for quality academic
+                        support. The instructors are knowledgeable, patient, and genuinely care about helping their
+                        students succeed. The classes are well-structured and engaging, making learning fun and
+                        effective. The center also provides a supportive and collaborative environment that encourages
+                        teamwork and fosters a sense of community. Overall, I am very satisfied with my experience at
+                        Book Education Tuition Center and would definitely recommend it to anyone looking for top-notch
+                        academic support."</p>
+                    <h3>Lebron James</h3>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="images/user2.png">
+                <div>
+                    <p>"Book Education Tuition Center is the best academic center I've ever attended! The instructors
+                        are incredibly knowledgeable and passionate about teaching, and they create a supportive and
+                        collaborative environment that encourages students to excel. The classes are well-organized,
+                        engaging, and tailored to meet the individual needs of each student. I have noticed a
+                        significant improvement in my academic performance since attending Book Education Tuition
+                        Center. The center also provides top-notch facilities, such as a high-class computer lab and a
+                        world-class canteen. Overall, I would give Book Tuition Center a 5 stars for providing an
+                        exceptional learning experience and an inclusive community that fosters academic success and
+                        personal growth."</p>
+                    <h3>Giannis Antetokounmpo</h3>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="images/user3.png">
+                <div>
+                    <p>"I am extremely grateful to have found Book Education Tuition Center. The instructors are
+                        knowledgeable, friendly, and truly invested in their students' success. They provide a
+                        supportive and collaborative environment that fosters academic growth and personal development.
+                        The center also offers excellent resources, including a professional counseling service and a
+                        high-class computer lab. The facilities are well-maintained, and the world-class canteen is an
+                        added bonus! I have seen a significant improvement in my academic performance since attending
+                        Book Education Tuition Center, and I have built valuable relationships with other students and
+                        staff. I would highly recommend this tuition center to anyone looking for quality academic
+                        support and a welcoming community."</p>
+                    <h3>Stephen Curry</h3>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------Call To Action----------->
+
+    <section class="cta">
+        <h1>Join Us As Soon As Possible To Get More Discounts!</h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!------------Footer----------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We treat our students like family, prioritizing their well-being and fostering a supportive and inclusive
+            community.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.twitter.com"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <p>Made by Ong Zhi Le </p>
+    </section>
+
+    <!------Javascript for Toggle Menu--------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
 </html>

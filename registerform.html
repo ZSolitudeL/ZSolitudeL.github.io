@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="form-validation.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">Registration Form</div>
+      <form action="process-form.php" method="post" id="registration-form">
+        <div class="input_field">
+          <label>Full Name</label>
+          <input type="text" name="fullname" class="input" required />
+        </div>
+        <div class="input_field">
+          <label>IC Number</label>
+          <input type="text" name="icnumber" class="input" required />
+        </div>
+        <div class="input_field">
+          <label>Email Address</label>
+          <input type="email" name="email" class="input" required />
+        </div>
+        <div class="input_field">
+          <label>Phone Number</label>
+          <input type="text" name="phone" class="input" required />
+        </div>
+        <div class="input_field">
+          <label>Gender</label>
+          <div class="custom_select">
+            <select name="gender" required>
+              <option value="">Select</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+        </div>
+        <div class="input_field">
+          <label>Subject</label>
+          <div class="custom_select">
+            <select name="subject" required>
+              <option value="">Select</option>
+              <option value="Python">Python</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="CSS">CSS</option>
+            </select>
+          </div>
+        </div>
+        <div class="input_field">
+          <label>Campus</label>
+          <div class="custom_select">
+            <select name="campus" required>
+              <option value="">Select</option>
+              <option value="Kuala Lumpur">Kuala Lumpur</option>
+              <option value="Penang">Penang</option>
+              <option value="Perak">Perak</option>
+            </select>
+          </div>
+        </div>
+        <div class="input_field">
+          <label>Intake</label>
+          <div class="custom_select">
+            <select name="intake" required>
+              <option value="">Select</option>
+              <option value="June">June</option>
+              <option value="November">November</option>
+            </select>
+          </div>
+        </div>
+        <div class="input_field">
+          <input type="submit" name="submit" value="Register" class="hero-btn red-btn" />
+          <input type="submit" name="submit" value="Cancel" class="hero-btn red-btn" onclick="location.href='subject.html';" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
